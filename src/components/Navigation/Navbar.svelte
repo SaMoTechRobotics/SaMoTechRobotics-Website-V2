@@ -1,6 +1,4 @@
 <script lang="ts">
-  import "../../theme.css"; // Import the global styles and theme colors
-
   export let page: string;
 </script>
 
