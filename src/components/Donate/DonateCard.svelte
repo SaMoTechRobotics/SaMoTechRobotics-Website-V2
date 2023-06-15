@@ -106,11 +106,12 @@
     }
 
     button {
-      background-color: var(--dark);
-      color: white;
+      // background-color: var(--dark);
+      background-color: transparent;
+      color: var(--dark);
       font-size: 1.2rem;
       font-weight: bold;
-      border: none;
+      border: 3px outset var(--primary);
       cursor: pointer;
 
       padding: 1rem 2rem;
@@ -118,7 +119,7 @@
 
       border-radius: 1rem;
       box-shadow: var(--box-shadow);
-      text-shadow: var(--text-shadow);
+      // text-shadow: var(--text-shadow);
 
       transition: box-shadow 200ms ease-in-out;
 

@@ -117,12 +117,12 @@
     justify-content: center;
 
     button {
-      background-color: var(--dark);
+      background-color: transparent;
       color: var(--text-inv);
       font-size: 1.5rem;
       font-weight: bold;
-      border: none;
       cursor: pointer;
+      border: 2px solid var(--text-inv);
 
       border-radius: 1rem;
 
@@ -138,7 +138,7 @@
         box-shadow 200ms ease-in-out;
 
       &:hover {
-        background-color: rgba(0, 0, 0, 0.1);
+        // background-color: rgba(0, 0, 0, 0.1);
         box-shadow: var(--box-shadow-hover);
       }
 
