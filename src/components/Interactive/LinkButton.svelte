@@ -8,7 +8,7 @@
   </button>
 </a>
 
-<style>
+<style lang="scss">
   button {
     margin: 0.5rem;
     padding: 0.5rem 1rem;
@@ -23,9 +23,9 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
     transition: background-color 300ms ease-in-out;
-  }
 
-  button:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
   }
 </style>
