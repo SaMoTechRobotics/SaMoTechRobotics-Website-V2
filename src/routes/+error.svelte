@@ -1,33 +1,44 @@
-<div>
-  <span style="font-size: 12rem; font-weight: bold;">404</span>
-  <span>Page not found, return to <button><a href="/">home</a></button></span>
+<script>
+  import Background from "../components/Sections/Background.svelte";
+</script>
+
+<Background />
+<div class="wrapper">
+  <h1>404</h1>
+  <p>There is no page here</p>
+  <p>Return to <a href="/">Home</a></p>
 </div>
 
-<style>
-  div {
+<style lang="scss">
+  .wrapper {
+    font-family: var(--font);
+    color: var(--text-inv);
+    text-shadow: var(--text-shadow);
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     font-size: 2rem;
-  }
 
-  button {
-    font-size: 2rem;
-    background: lightgray;
-    border: none;
-    border-radius: 1rem;
-    padding: 0.5rem;
-  }
+    h1 {
+      margin-top: 10rem;
+      font-size: 5rem;
+      margin-bottom: 0;
+    }
 
-  button:hover {
-    cursor: pointer;
-    background: gray;
-  }
+    p {
+      font-size: 2rem;
+    }
 
-  a {
-    text-decoration: none;
-    color: black;
+    a {
+      color: var(--dark);
+      text-decoration: none;
+      text-shadow: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 </style>
