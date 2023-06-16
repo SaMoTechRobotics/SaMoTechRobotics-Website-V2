@@ -1,9 +1,10 @@
 <script lang="ts">
   export let title: string;
   export let img: string;
+  export let textSide: "left" | "right" = "right";
 </script>
 
-<div class="content">
+<div class="content" class:right={textSide === "right"}>
   <div class="card">
     <h1>{title}</h1>
     <p>
@@ -13,9 +14,8 @@
   </div>
   <img src={img} alt="" />
 </div>
-<div class="stats" />
 
-<style>
+<style lang="scss">
   .content {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -26,81 +26,74 @@
     font-family: var(--font);
 
     padding: 4rem 2rem;
-  }
-  .stats {
-    background-color: white;
-    border-radius: 2rem;
-    width: 80%;
-    height: 6rem;
-    margin-left: 10%;
-    margin-top: -3rem;
+    padding-bottom: 0;
 
-    box-shadow: var(--box-shadow);
+    &.right {
+      grid-template-columns: 1.5fr 1fr;
 
-    transform: translateY(50%);
+      > .card {
+        order: 2;
+      }
 
-    transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
-  }
+      > img {
+        order: 1;
+      }
+    }
 
-  .stats:hover {
-    box-shadow: var(--box-shadow-hover);
-  }
-
-  @media (max-width: 980px) {
-    .content {
+    @media (max-width: 980px) {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
-    }
-    .content > .card {
-      order: 1;
-    }
-    .content > img {
-      order: -1;
-    }
-  }
 
-  @media (max-width: 550px) {
-    .content {
+      > .card {
+        order: 1;
+      }
+
+      > img {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 550px) {
       grid-template-rows: 1fr 0.4fr;
     }
-  }
 
-  .card {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    .card {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
-    color: var(--text-inv);
-    text-shadow: var(--text-shadow);
-  }
+      color: var(--text-inv);
+      text-shadow: var(--text-shadow);
 
-  .card > .buttons {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 0;
+      }
 
-  .card h1 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 0;
-  }
+      p {
+        font-size: 1rem;
+        text-align: center;
+      }
 
-  .card p {
-    font-size: 1rem;
-    text-align: center;
-  }
+      > .buttons {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    }
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1rem;
 
-    box-shadow: var(--box-shadow);
+      box-shadow: var(--box-shadow);
+    }
   }
 </style>
