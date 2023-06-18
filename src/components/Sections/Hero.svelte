@@ -19,11 +19,12 @@
       padding: 0rem 0.1rem;
       padding-top: 2rem;
     }
+
     img {
-      width: 100%;
+      max-width: 100%;
       max-height: calc(100vh - 6rem - 5rem);
 
-      object-fit: cover;
+      object-fit: contain;
       border-radius: 1rem;
 
       box-shadow: var(--img-shadow);
