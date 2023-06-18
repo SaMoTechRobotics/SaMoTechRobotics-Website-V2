@@ -17,15 +17,15 @@
 
   :root {
     --bg: rgb(239, 253, 255);
-    --bg-hover: rgb(239, 248, 251);
+    --bg-hover: rgb(203, 222, 228);
     --bg-secondary: #f5f5f5;
 
     --primary: rgba(0, 200, 255, 1);
     --dark: rgba(2, 145, 184, 1);
-    --secondary: rgba(154, 218, 244, 1);
+    --secondary: rgb(77, 216, 254);
 
-    --text: rgb(4, 112, 141);
-    --text-muted: rgb(102, 171, 192);
+    --text: rgb(0, 100, 127);
+    --text-muted: rgb(0, 139, 177);
     --text-inv: #fff;
 
     --text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
