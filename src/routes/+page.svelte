@@ -3,6 +3,7 @@
   import Background from "../components/Sections/Background.svelte";
   import Hero from "../components/Sections/Hero.svelte";
   import SplitSection from "../components/Sections/SplitSection.svelte";
+  import SponsorsSection from "../components/Sections/Sponsors/SponsorsSection.svelte";
   import Stat from "../components/Sections/Stats/Stat.svelte";
   import StatsBar from "../components/Sections/Stats/StatsBar.svelte";
 </script>
@@ -76,24 +77,7 @@
   </div>
 </SplitSection>
 
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+<SponsorsSection />
 
 <style>
 </style>
