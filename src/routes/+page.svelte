@@ -1,11 +1,11 @@
 <script>
     import LinkButton from "../components/Interactive/LinkButton.svelte";
     import Background from "../components/Sections/Background.svelte";
-    import CarouselHero from "../components/Sections/Heros/CarouselHero.svelte";
     import SplitSection from "../components/Sections/SplitSection.svelte";
     import SponsorsSection from "../components/Sections/Sponsors/SponsorsSection.svelte";
-    import SectionBackground from "../components/Sections/SectionBackground.svelte";
+    import EmptySection from "../components/Sections/EmptySection.svelte";
     import Hero from "../components/Sections/Heros/Hero.svelte";
+    import RookieAccomplishments from "../components/Sections/Stats/RookieAccomplishments.svelte";
 </script>
 
 <Background/>
@@ -13,7 +13,9 @@
 <Hero
         title="SaMoTech"
         img="images/photos/team/samotech-team1.jpg"
-/>
+>
+    <RookieAccomplishments/>
+</Hero>
 
 <!--<CarouselHero-->
 <!--  imgs="images/photos/team/samotech-team1.jpg,images/photos/samotech-winning1.webp"-->
