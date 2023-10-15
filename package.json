@@ -21,6 +21,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@vercel/analytics": "^1.1.1",
 		"sass": "^1.63.4"
 	}
 }

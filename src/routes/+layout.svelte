@@ -2,6 +2,10 @@
     import {page} from "$app/stores";
     import Footer from "../components/Navigation/Footer.svelte";
     import Navbar from "../components/Navigation/Navbar.svelte";
+    import {dev} from '$app/environment';
+    import {inject} from '@vercel/analytics';
+
+    inject({mode: dev ? 'development' : 'production'});
 </script>
 
 <Navbar page={$page.url.pathname.replace("/", "") || "home"} home={$page.url.pathname === "/"}/>
