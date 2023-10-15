@@ -18,9 +18,12 @@
     </svg>
     <div class="content">
         <div class="social">
-            <SocialButton to="" icon="akar-icons:instagram-fill" white={$page.url.pathname !== "/"}/>
-            <SocialButton to="" icon="akar-icons:github-fill" white={$page.url.pathname !== "/"}/>
-            <SocialButton to="" icon="akar-icons:youtube-fill" white={$page.url.pathname !== "/"}/>
+            <SocialButton icon="akar-icons:instagram-fill" white={$page.url.pathname !== "/"}
+                          to="https://www.instagram.com/samotechrobotics/"/>
+            <SocialButton icon="akar-icons:github-fill" white={$page.url.pathname !== "/"}
+                          to="https://github.com/SaMoTechRobotics"/>
+            <SocialButton icon="akar-icons:youtube-fill" white={$page.url.pathname !== "/"}
+                          to="https://www.youtube.com/@samotechrobotics"/>
         </div>
         <p>Contact us at <a href="mailto:samotechrobotics@gmail.com">samotechrobotics@gmail.com</a></p>
     </div>
