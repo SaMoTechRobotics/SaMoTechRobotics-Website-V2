@@ -14,7 +14,7 @@
 
 <SplitSection
         title="Support Us"
-        imgs="images/photos/team-huddle.jpg"
+        imgs="images/photos/samotech-building1.jpg"
         textSide="left"
         noBackground="true"
 >

@@ -9,7 +9,7 @@
 
 <SplitSection
         title="Our Story"
-        imgs="images/photos/cad-class.jpg,images/photos/e-hub-thanks.jpg,images/photos/rank-trophy.jpg"
+        imgs="images/photos/e-hub-thanks.jpg,images/photos/rank-trophy.jpg"
         textSide="right"
         noBackground="true"
 >
