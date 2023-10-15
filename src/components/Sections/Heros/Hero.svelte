@@ -7,15 +7,19 @@
 
     onMount(() => {
         if (window.innerWidth < 880) {
-            return;
+            y = -300;
         }
         window.addEventListener('scroll', () => {
+            if (window.innerWidth < 880) {
+                y = -300;
+                return;
+            }
             y = window.scrollY;
         });
     });
 </script>
 
-<div class="wrapper" style="background-image: url({img}); {y !== 0 ? 'background-position-y: {-y / 3}px;' : ''}">
+<div class="wrapper" style="background-image: url({img}); background-position-y: {-y / 3}px;">
     <!--    <img src={img} alt=""/>-->
     <div class="overlay">
         <slot/>
