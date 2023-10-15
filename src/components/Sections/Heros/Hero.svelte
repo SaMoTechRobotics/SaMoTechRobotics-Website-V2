@@ -39,6 +39,8 @@
     @media (max-width: 880px) {
       background-size: contain;
       background-position-y: 100px;
+
+      height: calc(100vh - 100px);
     }
 
     img {
@@ -62,6 +64,7 @@
 
       @media (max-width: 880px) {
         padding-bottom: 0;
+        height: calc(100% - 100px);
       }
     }
 

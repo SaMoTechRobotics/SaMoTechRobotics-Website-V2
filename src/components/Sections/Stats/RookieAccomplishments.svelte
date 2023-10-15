@@ -41,6 +41,12 @@
 
     box-shadow: var(--img-shadow);
 
+    @media (max-width: 880px) {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      box-shadow: none;
+    }
+
     h1 {
       font-size: 1.2rem;
       margin-bottom: 1rem;
