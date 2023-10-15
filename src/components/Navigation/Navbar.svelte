@@ -25,11 +25,11 @@
         <a href="/about">
           <button class:active={page === "about"}>About</button>
         </a>
-        <a href="/robot">
-          <button class:active={page === "robot"}>Robot</button>
-        </a>
-        <a href="/donate">
-          <button class:active={page === "donate"}>Donate</button>
+<!--        <a href="/robot">-->
+<!--          <button class:active={page === "robot"}>Robot</button>-->
+<!--        </a>-->
+        <a href="/support">
+          <button class:active={page === "support"}>Support</button>
         </a>
       </nav>
     </div>
@@ -42,11 +42,11 @@
           <a href="/about">
             <button class:active={page === "about"}>About</button>
           </a>
-          <a href="/robot">
-            <button class:active={page === "robot"}>Robot</button>
-          </a>
-          <a href="/donate">
-            <button class:active={page === "donate"}>Donate</button>
+<!--          <a href="/robot">-->
+<!--            <button class:active={page === "robot"}>Robot</button>-->
+<!--          </a>-->
+          <a href="/support">
+            <button class:active={page === "support"}>Support</button>
           </a>
         </div>
       </div>
