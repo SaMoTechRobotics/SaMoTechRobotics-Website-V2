@@ -93,7 +93,7 @@
       p {
         color: var(--text-gray);
         font-size: 1rem;
-        text-align: center;
+        text-align: left;
         line-height: 2rem;
       }
 
