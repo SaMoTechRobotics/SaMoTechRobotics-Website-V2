@@ -28,10 +28,6 @@
         typically 100% tax deductible in the US.
         Thank you for any consideration you may give to supporting our team.
     </p>
-    <h3 style="color: var(--text-gray);">
-        If you would like to sponsor us, please contact us at <a href="mailto:samotechrobotics@gmail.com"
-                                                                 style="color: var(--dark);">samotechrobotics@gmail.com.</a>
-    </h3>
     <div slot="buttons">
         <DonateButton to="https://www.paypal.com/donate/?hosted_button_id=6M6HKRXT9468Y" title="Donate With PayPal">
             <Icon
@@ -42,6 +38,41 @@
             />
         </DonateButton>
     </div>
+</SplitSection>
+
+
+<SplitSection
+        title="Sponsor Us"
+        imgs="images/photos/samotech-building1.jpg"
+        textSide="right"
+        noBackground="true"
+>
+    <p>
+        If you or your company has interest in sponsoring SaMoTech, please contact us at <a
+            href="mailto:samotechrobotics@gmail.com"
+            style="color: var(--dark);">SaMoTechRobotics@gmail.com</a>.
+    </p>
+    <h3>
+        Benefits
+    </h3>
+    <p>
+        We would be proud to include your company’s name and/or logo as our sponsor on all promotional materials
+        including on our website, social media accounts, team banner and t-shirts worn at all competitions. The size and
+        placement of the name/logo will be dependent on the number of sponsors we require and will reflect their
+        relative contributions. We also welcome any discussion on how else we could show our thanks.
+        If you would like more information, including a detailed budget, please contact us at any time. We welcome
+        questions about our team, the competition, and about how your company might help these inspirational students.
+    </p>
+    <h3>
+        Legacy
+    </h3>
+    <p>
+        Your contributions will fund not just SaMoTech’s sophomore season but will also provide the foundation for our
+        members to pursue their engineering dreams through all 4 years of high school. It is also our long-term hope to
+        have such undeniable success in the FIRST competitions that it will compel our local public school system to
+        establish robotics teams for credit as many private and some public schools across the country have already
+        done.
+    </p>
 </SplitSection>
 
 <SponsorsSection/>
