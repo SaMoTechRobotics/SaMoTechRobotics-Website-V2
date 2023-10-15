@@ -36,10 +36,17 @@
 
     padding: 2rem 2rem;
 
+    //&.noBackground {
+    //  background-color: transparent;
+    //  color: var(--text-inv);
+    //  text-shadow: var(--text-shadow);
+    //}
+
     &.noBackground {
-      background-color: transparent;
-      color: var(--text-inv);
-      text-shadow: var(--text-shadow);
+      margin: 2rem;
+      margin-top: 0;
+      padding: 1rem;
+      border-radius: 15px;
     }
 
     &.right {

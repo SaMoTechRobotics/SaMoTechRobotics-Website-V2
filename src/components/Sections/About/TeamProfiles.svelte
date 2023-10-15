@@ -30,7 +30,7 @@
 <style lang="scss">
   .wrapper {
     background-color: var(--bg);
-    margin: 3rem 3rem;
+    margin: 2rem 2rem;
     border-radius: 1rem;
     padding: 1rem;
 
