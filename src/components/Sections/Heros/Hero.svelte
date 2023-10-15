@@ -6,13 +6,16 @@
     let y = 0;
 
     onMount(() => {
+        if (window.innerWidth < 880) {
+            return;
+        }
         window.addEventListener('scroll', () => {
             y = window.scrollY;
         });
     });
 </script>
 
-<div class="wrapper" style="background-image: url({img}); background-position-y: {-y / 3}px;">
+<div class="wrapper" style="background-image: url({img}); {y !== 0 ? 'background-position-y: {-y / 3}px;' : ''}">
     <!--    <img src={img} alt=""/>-->
     <div class="overlay">
         <slot/>
@@ -28,12 +31,15 @@
     width: 100vw;
     height: 100vh;
 
-    margin-bottom: -0.5rem;
-
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    @media (max-width: 880px) {
+      background-size: contain;
+      background-position-y: 100px;
+    }
 
     img {
       width: 100%;
@@ -53,6 +59,10 @@
       align-items: center;
       justify-content: end;
       padding-bottom: 6rem;
+
+      @media (max-width: 880px) {
+        padding-bottom: 0;
+      }
     }
 
 
