@@ -1,28 +1,29 @@
 <script>
-  import SocialButton from "../Interactive/SocialButton.svelte";
+    import SocialButton from "../Interactive/SocialButton.svelte";
+    import {page} from "$app/stores";
 </script>
 
-<div class="wrapper">
-  <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-       viewBox="0 20 150 28" preserveAspectRatio="none" shape-rendering="auto">
-    <defs>
-      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-    </defs>
-    <g class="parallax">
-      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0, 200, 255, 0.4)" />
-      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(0, 200, 255, 0.6)" />
-      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0, 200, 255, 0.8)" />
-      <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(0, 200, 255, 1)" />
-    </g>
-  </svg>
-  <div class="content">
-  <div class="social">
-    <SocialButton to="" icon="akar-icons:instagram-fill" />
-    <SocialButton to="" icon="akar-icons:github-fill" />
-    <SocialButton to="" icon="akar-icons:youtube-fill" />
-  </div>
-    <p>Contact us at <a href="mailto:samotechrobotics@gmail.com">samotechrobotics@gmail.com</a></p>
-  </div>
+<div class="wrapper" class:noWaves={$page.url.pathname !== "/"}>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+         viewBox="0 20 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0, 200, 255, 0.4)"/>
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(0, 200, 255, 0.6)"/>
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0, 200, 255, 0.8)"/>
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(0, 200, 255, 1)"/>
+        </g>
+    </svg>
+    <div class="content">
+        <div class="social">
+            <SocialButton to="" icon="akar-icons:instagram-fill" white={$page.url.pathname !== "/"}/>
+            <SocialButton to="" icon="akar-icons:github-fill" white={$page.url.pathname !== "/"}/>
+            <SocialButton to="" icon="akar-icons:youtube-fill" white={$page.url.pathname !== "/"}/>
+        </div>
+        <p>Contact us at <a href="mailto:samotechrobotics@gmail.com">samotechrobotics@gmail.com</a></p>
+    </div>
 </div>
 
 <style lang="scss">
@@ -38,16 +39,36 @@
     justify-content: center;
     align-items: center;
 
+    &.noWaves {
+      height: 8rem;
+
+      .waves {
+        display: none;
+      }
+
+      .content {
+        background-color: var(--bg);
+
+        p {
+          color: var(--text);
+
+          a {
+            color: var(--text);
+          }
+        }
+      }
+    }
+
     .content {
       background-color: var(--primary);
       width: 100%;
       height: 100%;
       padding-top: 1rem;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
       .social {
 
@@ -60,22 +81,21 @@
         }
       }
 
-        p {
-          font-family: var(--font);
-            margin: 0;
-            padding: 0.5rem;
+      p {
+        font-family: var(--font);
+        margin: 0;
+        padding: 0.5rem;
 
-            a {
-              color: var(--text-inv);
-              text-decoration: none;
-              transition: all 0.2s ease-in-out;
+        a {
+          color: var(--text-inv);
+          text-decoration: none;
+          transition: all 0.2s ease-in-out;
 
-              &:hover {
-                color: var(--text-inv);
-                text-decoration: underline;
-              }
-            }
+          &:hover {
+            text-decoration: underline;
+          }
         }
+      }
 
     }
 
