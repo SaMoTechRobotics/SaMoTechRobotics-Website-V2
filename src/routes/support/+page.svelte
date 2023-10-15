@@ -28,6 +28,10 @@
         typically 100% tax deductible in the US.
         Thank you for any consideration you may give to supporting our team.
     </p>
+    <h3 style="color: var(--text-gray);">
+        If you would like to sponsor us, please contact us at <a href="mailto:samotechrobotics@gmail.com"
+                                                                 style="color: var(--dark);">samotechrobotics@gmail.com.</a>
+    </h3>
     <div slot="buttons">
         <DonateButton to="https://www.paypal.com/donate/?hosted_button_id=6M6HKRXT9468Y" title="Donate With PayPal">
             <Icon
