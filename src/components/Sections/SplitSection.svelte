@@ -67,6 +67,13 @@
       margin-top: 0;
       padding: 1rem;
       border-radius: 15px;
+
+      @media (max-width: 980px) {
+        margin: 1rem;
+        margin-top: 0;
+        padding: 1rem;
+        border-radius: 15px;
+      }
     }
 
     &.right {
