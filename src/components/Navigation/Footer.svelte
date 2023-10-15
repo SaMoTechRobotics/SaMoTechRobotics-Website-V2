@@ -25,6 +25,7 @@
             <SocialButton icon="akar-icons:youtube-fill" white={$page.url.pathname !== "/"}
                           to="https://www.youtube.com/@samotechrobotics"/>
         </div>
+        <p>SaMoTech Team #21936</p>
         <p>Contact us at <a href="mailto:samotechrobotics@gmail.com">samotechrobotics@gmail.com</a></p>
     </div>
 </div>
