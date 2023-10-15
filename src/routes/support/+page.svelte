@@ -43,7 +43,7 @@
 
 <SplitSection
         title="Sponsor Us"
-        imgs="images/photos/samotech-building1.jpg"
+        imgs="images/photos/samotech-building2.jpg"
         textSide="right"
         noBackground="true"
 >
