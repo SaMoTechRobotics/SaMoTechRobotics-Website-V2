@@ -8,17 +8,14 @@
 <Background />
 
 <SplitSection
-  title="About Us"
+  title="Our Story"
   img="images/photos/team/samotech-team2.jpg"
   textSide="right"
   noBackground="true"
 >
-  SaMoTech robotics is a community based robotics team that participates in the
-  FIRST Tech Challenge. SaMoTech robotics is a community based robotics team
-  that participates in the FIRST Tech Challenge. SaMoTech robotics is a
-  community based robotics team that participates in the FIRST Tech Challenge.
-  SaMoTech robotics is a community based robotics team that participates in the
-  FIRST Tech Challenge.
+  SaMoTech Robotics was founded by 6 freshmen in the fall of 2022 after they couldn't find support for a robotics team at their public high school. The team is entirely student-led with volunteer coaches and funded by donations, grants, and community sponsors.
+  Despite their limited resources, SaMoTech recently completed an extraordinary rookie year. By the end of regular season the team had set 4 top-10 scores for the region and battled to #1 ranking in Los Angeles, as well as being listed among the top 50 teams worldwide (6000+). SaMoTech entered the postseason as League W Champions, then  extended their winning streak to 23 consecutive matches to become their Inter-League Winning Alliance Captains. At the Regional Championship, the team battled to a semi-final tie-breaker, finally eliminated by the eventual World Champions.
+  For their sophomore season (2023/24), SaMoTech students are committed to pushing themselves even further. They have already started developing more advanced engineering and coding techniques to build an even more complex robot, with the goal of earning a spot at the 2024 World Championship in Houston, Texas.
 </SplitSection>
 
 <TeamProfiles>

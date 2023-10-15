@@ -23,6 +23,11 @@
     grid-template-columns: 13rem 1fr;
     grid-template-rows: 1fr;
 
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 13rem 1fr;
+    }
+
     img {
       width: 12rem;
       height: 12rem;
@@ -53,8 +58,11 @@
       p {
         font-size: 1rem;
         font-weight: normal;
+        line-height: 2rem;
         color: var(--text);
       }
+
+
     }
   }
 </style>

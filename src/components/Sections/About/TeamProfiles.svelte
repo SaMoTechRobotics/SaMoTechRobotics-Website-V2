@@ -30,7 +30,7 @@
 <style lang="scss">
   .wrapper {
     background-color: var(--bg);
-    margin: 3rem 1rem;
+    margin: 3rem 3rem;
     border-radius: 1rem;
     padding: 1rem;
 
@@ -40,8 +40,7 @@
     box-shadow: var(--box-shadow);
 
     .top-content {
-      padding: 1rem;
-      padding-bottom: 0;
+      padding: 1rem 1rem 0;
       display: flex;
       justify-content: flex-end;
 
@@ -59,7 +58,11 @@
         &:hover {
           color: var(--dark);
         }
+
       }
+        @media (max-width: 1012px) {
+          padding-bottom: 2rem;
+        }
     }
 
     .content {
@@ -85,6 +88,10 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(300px, 1fr));
         grid-gap: 1rem;
+
+        @media (max-width: 1012px) {
+          grid-template-columns: repeat(1, minmax(300px, 1fr));
+        }
       }
     }
   }

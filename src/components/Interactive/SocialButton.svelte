@@ -18,7 +18,7 @@
     align-items: center;
     justify-content: center;
 
-    color: var(--dark);
+    color: var(--text-inv);
     transition: color 300ms ease-in-out;
 
     div {

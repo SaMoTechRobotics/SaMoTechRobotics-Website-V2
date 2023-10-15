@@ -1,5 +1,6 @@
 <script lang="ts">
   export let page: string;
+  export let home: boolean;
 
   let menuOpen = false;
 
@@ -8,7 +9,7 @@
 
 <title>SaMoTech Robotics » {page.charAt(0).toUpperCase() + page.slice(1)}</title
 >
-<div class="navbar-wrapper" class:scrolled={scrollY > 30}>
+<div class="navbar-wrapper" class:scrolled={scrollY > 30} class:home={home}>
   <div class="navbar-content">
     <div class="left-items">
       <a href="/"
@@ -61,13 +62,17 @@
     </div>
   </div>
 </div>
-<div class="padding" />
+<div class="padding" class:home={home} />
 
 <svelte:window bind:scrollY />
 
 <style lang="scss">
   .padding {
     height: 6rem;
+
+    &.home {
+      height: 0;
+    }
   }
 
   .navbar-wrapper {
@@ -77,16 +82,20 @@
     left: 0;
     width: 100%;
     font-family: var(--font);
-    transition: background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+    transition: background-color 0ms ease-in-out, box-shadow 300ms ease-in-out;
+
+&.home {
+  background-color: rgba(0, 200, 255, 1);
+}
 
     &.scrolled {
-      background-color: rgba(0, 200, 255, 1);
+    background-color: rgba(0, 200, 255, 1);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
   }
 
   .navbar-content {
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,7 +116,7 @@
     font-size: 2rem;
     font-weight: bold;
     display: flex;
-    align-items: top;
+    align-items: center;
     justify-content: space-between;
 
     > a {

@@ -1,6 +1,6 @@
 <div class="background" />
 
-<style>
+<style lang="scss">
   .background {
     background: linear-gradient(
       45deg,

@@ -26,7 +26,7 @@
   .content {
     background-color: var(--bg);
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     height: 100%;
@@ -34,8 +34,7 @@
     font-family: var(--font);
     color: var(--text);
 
-    padding: 4rem 2rem;
-    padding-bottom: 0;
+    padding: 2rem 2rem;
 
     &.noBackground {
       background-color: transparent;
@@ -44,7 +43,7 @@
     }
 
     &.right {
-      grid-template-columns: 1.5fr 1fr;
+      grid-template-columns: 1fr 1fr;
 
       > .card {
         order: 2;
@@ -85,8 +84,10 @@
       }
 
       p {
+        color: var(--text-gray);
         font-size: 1rem;
         text-align: center;
+        line-height: 2rem;
       }
 
       .buttons {
