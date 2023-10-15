@@ -1,25 +1,42 @@
 <script lang="ts">
-  export let title: string;
-  export let img: string;
-  export let textSide: "left" | "right" = "right";
-  export let noBackground: "true" | "false" = "false";
+    export let title: string;
+    export let img: string = "";
+    export let imgs: string = "";
+    export let textSide: "left" | "right" = "right";
+    export let noBackground: "true" | "false" = "false";
+
+    let imgsArray: string[] = [];
+    $: {
+        if (imgs) {
+            imgsArray = imgs.split(",");
+        }
+    }
 </script>
 
 <div
-  class="content"
-  class:right={textSide === "right"}
-  class:noBackground={noBackground === "true"}
+        class="content"
+        class:right={textSide === "right"}
+        class:noBackground={noBackground === "true"}
 >
-  <div class="card">
-    <h1>{title}</h1>
-    <p>
-      <slot />
-    </p>
-    <div class="buttons">
-      <slot name="buttons" />
+    <div class="card">
+        <h1>{title}</h1>
+        <p>
+            <slot/>
+        </p>
+        <div class="buttons">
+            <slot name="buttons"/>
+        </div>
     </div>
-  </div>
-  <img src={img} alt="" />
+    {#if imgsArray.length > 0}
+        <div class="imgs">
+            {#each imgsArray as img}
+                <img src={img} alt=""/>
+            {/each}
+        </div>
+    {/if}
+    {#if img !== ""}
+        <img src={img} alt=""/>
+    {/if}
 </div>
 
 <style lang="scss">
@@ -81,7 +98,7 @@
       padding: 2rem;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
 
       h1 {
@@ -106,6 +123,17 @@
         align-items: center;
 
         text-align: center;
+      }
+    }
+
+    .imgs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        margin-bottom: 1rem;
       }
     }
 

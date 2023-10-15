@@ -9,7 +9,7 @@
 
 <SplitSection
         title="Our Story"
-        img="images/photos/team/samotech-team2.jpg"
+        imgs="images/photos/cad-class.jpg,images/photos/e-hub-thanks.jpg,images/photos/rank-trophy.jpg"
         textSide="right"
         noBackground="true"
 >
