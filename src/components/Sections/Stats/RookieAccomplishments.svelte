@@ -1,7 +1,7 @@
 <div
         class="content"
 >
-    <h2>2022-2023 Season</h2>
+    <h1>2022-2023 Season Accomplishments</h1>
     <ul>
         <li>
             Ranked #1 in Los Angeles at the end of regular season
@@ -16,7 +16,9 @@
             Regional Championship Semi-Finalist (finally defeated in a tie-breaker against the eventual World Champions)
         </li>
         <li>
-            We made the front page of our local newspaper!
+            We made <a
+                href="https://smdp.com/2023/03/07/samotech-robotics-team-to-compete-in-southern-california-championship/"
+                target="_blank">the front page of our local newspaper!</a>
         </li>
     </ul>
 </div>
@@ -27,6 +29,8 @@
 
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 
     font-family: var(--font);
     color: var(--text);
@@ -37,19 +41,24 @@
 
     box-shadow: var(--img-shadow);
 
-    h2 {
+    h1 {
       font-size: 1.2rem;
       margin-bottom: 1rem;
-      text-align: left;
     }
 
     ul {
+      list-style: none;
       color: var(--text-gray);
       margin: 0;
-      text-align: left;
+      padding: 0;
 
       li {
         margin-bottom: 1rem;
+
+        a {
+          color: var(--dark);
+          text-decoration: none;
+        }
       }
     }
 
