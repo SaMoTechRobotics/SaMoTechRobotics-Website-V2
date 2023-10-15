@@ -1,30 +1,30 @@
 <script lang="ts">
-  import PreviousTeamProfiles from "./PreviousTeamProfiles.svelte";
+    import PreviousTeamProfiles from "./PreviousTeamProfiles.svelte";
 
-  const years = ["2023-2024", "2022-2023"] as const;
-  let year: (typeof years)[number] = "2023-2024";
+    const years = ["2023-2024", "2022-2023"] as const;
+    let year: (typeof years)[number] = "2023-2024";
 </script>
 
 <div class="wrapper">
-  <div class="top-content">
-    <!-- <Select options={years.join(",")} bind:selectedOption={year} /> -->
-    <select bind:value={year}>
-      {#each years as y}
-        <option value={y}>{y}</option>
-      {/each}
-    </select>
-  </div>
-  <div class="content">
-    <h1>SaMoTech Team of {year}</h1>
-    <img src={`images/photos/team/team${year}.jpg`} alt="" />
-    <div class="profiles">
-      {#if year === "2023-2024"}
-        <slot />
-      {:else if year === "2022-2023"}
-        <PreviousTeamProfiles {year} />
-      {/if}
+    <div class="top-content">
+        <!-- <Select options={years.join(",")} bind:selectedOption={year} /> -->
+        <select bind:value={year}>
+            {#each years as y}
+                <option value={y}>{y}</option>
+            {/each}
+        </select>
     </div>
-  </div>
+    <div class="content">
+        <h1>SaMoTech Team of {year}</h1>
+        <img src={`images/photos/team/team${year}.jpg`} alt=""/>
+        <div class="profiles">
+            {#if year === "2023-2024"}
+                <slot/>
+            {:else if year === "2022-2023"}
+                <PreviousTeamProfiles {year}/>
+            {/if}
+        </div>
+    </div>
 </div>
 
 <style lang="scss">
@@ -38,6 +38,10 @@
     color: var(--text);
 
     box-shadow: var(--box-shadow);
+
+    @media (max-width: 700px) {
+      margin: 2rem 1rem;
+    }
 
     .top-content {
       padding: 1rem 1rem 0;
@@ -60,9 +64,10 @@
         }
 
       }
-        @media (max-width: 1012px) {
-          padding-bottom: 2rem;
-        }
+
+      @media (max-width: 1012px) {
+        padding-bottom: 2rem;
+      }
     }
 
     .content {
