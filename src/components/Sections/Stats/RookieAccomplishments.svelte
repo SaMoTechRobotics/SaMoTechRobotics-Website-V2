@@ -1,7 +1,7 @@
 <div
         class="content"
 >
-    <h2>Our Rookie 2022-2023 Accomplishments</h2>
+    <h2>2022-2023 Season</h2>
     <ul>
         <li>
             Ranked #1 in Los Angeles at the end of regular season
@@ -35,8 +35,10 @@
 
     border-radius: 2rem;
 
-    h1 {
-      font-size: 2rem;
+    box-shadow: var(--img-shadow);
+
+    h2 {
+      font-size: 1.2rem;
       margin-bottom: 1rem;
       text-align: left;
     }
