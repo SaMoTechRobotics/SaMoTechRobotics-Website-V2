@@ -16,7 +16,7 @@
     </div>
     <div class="content">
         <h1>SaMoTech Team of {year}</h1>
-        <img src={`images/photos/team/team${year}.jpg`} alt=""/>
+        <!--        <img src={`images/photos/team/team${year}.jpg`} alt=""/>-->
         <div class="profiles">
             {#if year === "2023-2024"}
                 <slot/>
