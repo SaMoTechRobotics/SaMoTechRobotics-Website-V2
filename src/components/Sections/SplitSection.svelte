@@ -35,8 +35,11 @@
         </div>
     {/if}
     {#if img !== ""}
-        <img src={img} alt=""/>
+        <div class="img">
+            <img src={img} alt=""/>
+        </div>
     {/if}
+    <slot name="bottom"/>
 </div>
 
 <style lang="scss">
@@ -115,7 +118,7 @@
       }
 
       .buttons {
-        margin-top: 1rem;
+        margin-top: -1rem;
 
         display: flex;
         flex-direction: row;
@@ -137,10 +140,18 @@
       }
     }
 
+    .img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      margin-bottom: 2rem;
+    }
+
     img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      max-width: 100%;
+      object-fit: contain;
       border-radius: 1rem;
 
       box-shadow: var(--img-shadow);
