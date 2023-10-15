@@ -1,11 +1,12 @@
 <script lang="ts">
-  export let to: string;
+    export let to: string;
+    export let newTab: boolean = false;
 </script>
 
-<a href={to}>
-  <button>
-    <slot />
-  </button>
+<a href={to} target={newTab ? '_blank' : '_self'}>
+    <button>
+        <slot/>
+    </button>
 </a>
 
 <style lang="scss">
@@ -29,7 +30,7 @@
       box-shadow: var(--box-shadow);
 
       transition: box-shadow 300ms ease-in-out,
-        background-color 300ms ease-in-out;
+      background-color 300ms ease-in-out;
 
       &:hover {
         background-color: var(--bg-hover);

@@ -83,7 +83,7 @@
         education opportunities including $80M+ in college scholarships.
     </p>
     <div slot="buttons">
-        <LinkButton to="/about">Learn More</LinkButton>
+        <LinkButton to="https://www.firstinspires.org/robotics/ftc" newTab="true">Learn More</LinkButton>
     </div>
 </SplitSection>
 
