@@ -9,27 +9,28 @@
 
 <SplitSection
         title="Our Story"
-        imgs="images/photos/e-hub-thanks.jpg,images/photos/rank-trophy.jpg"
+        imgs="images/photos/samotech-garage.webp,images/photos/ilt2-winning-alliance.jpg"
         textSide="right"
         noBackground="true"
 >
     <p>
         SaMoTech Robotics was founded by 6 freshmen in the fall of 2022 after they couldn't find support for a robotics
-        team at their public high school. The team is entirely student-led with volunteer coaches and funded by
-        donations, grants, and community sponsors.
+        team at their public high school. The team is now a 501c3 charity, entirely student-led with volunteer coaches
+        and funded by donations, grants, and community sponsors.
     </p>
+
     <p>
-        Despite their limited resources, SaMoTech recently completed an extraordinary rookie year. By the end of regular
-        season the team had set 4 top-10 scores for the region and battled to #1 ranking in Los Angeles, as well as
-        being listed among the top 50 teams worldwide (6000+). SaMoTech entered the postseason as League W Champions,
-        then extended their winning streak to 23 consecutive matches to become their Inter-League Winning Alliance
-        Captains. At the Regional Championship, the team battled to a semi-final tie-breaker, finally eliminated by the
-        eventual World Champions.
+        Despite their limited resources, SaMoTech enjoyed an extraordinary rookie year, ending the regular season as
+        League W Champions and ranked #1 in all of SoCal (170 Teams). At the Regional Championship, the team battled to
+        a semi-final tie-breaker, finally eliminated by the eventual World Champions.
     </p>
+
     <p>
-        For their sophomore season (2023/24), SaMoTech students are committed to pushing themselves even further. They
-        have already started developing more advanced engineering and coding techniques to build an even more complex
-        robot, with the goal of earning a spot at the 2024 World Championship in Houston, Texas.
+        Now in their sophomore season (2023/24), SaMoTech has again achieved elite status as League W Champions,
+        InterLeague Winning Alliance Captains, and ranked #1 in the entire state for their autonomous program (#11 in
+        the world among 5000+ teams). Undefeated this season with 24 straight victories and several top-10 record
+        scores, SaMoTech is now preparing for the Regional Championships on March 9 with the goal of earning a spot at
+        the 2024 World Championship in Houston, Texas.
     </p>
 </SplitSection>
 
@@ -45,10 +46,10 @@
         iterate through meets, and see how robots improve through the challenge.
     </Profile>
     <Profile name="Brandon">
-        Aside from robotics, I play tennis and do coding projects. I focus on coding
-        teleop and autonomous, and building mechanical features on the robot. My
-        favorite thing about FTC is being amazed by different approaches robots and
-        teams have.
+        Aside from robotics, I run and work on coding projects. I focus on coding
+        teleop and autonomous, as well as building mechanical features on the robot. My
+        favorite thing about FTC is being amazed by the many different approaches teams
+        come up with for their robots.
     </Profile>
     <Profile name="Cameron">
         I really enjoy cycling, and getting fit for that. I've been helping by
@@ -72,10 +73,7 @@
         organizing the portfolio, and designing the t-shirt and logo. My favorite
         thing about FTC is the competitions and learning from other teams.
     </Profile>
-    <Profile name="Abigail">
-        I'm the official cute distraction of the team. My job is to strut around the
-        field during driving practice so no one can focus- they're too busy oohing
-        and aahing over my cuteness. I love FTC because all these amazing humans
-        come to pet me.
+    <Profile name="Waylon">
+        I am Waylon. I will write my bio soon.
     </Profile>
 </TeamProfiles>

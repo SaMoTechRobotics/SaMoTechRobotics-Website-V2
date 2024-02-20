@@ -19,7 +19,7 @@
     });
 </script>
 
-<div class="wrapper" style="background-image: url({img}); background-position-y: {-y / 3}px;">
+<div class="wrapper" style="background-image: url({img}); background-position-y: {-y / 3 + 20}px;">
     <!--    <img src={img} alt=""/>-->
     <div class="overlay">
         <slot/>
@@ -50,7 +50,6 @@
     img {
       width: 100%;
       height: 100%;
-
 
       object-fit: cover;
     }

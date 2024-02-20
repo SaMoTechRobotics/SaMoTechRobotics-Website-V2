@@ -3,18 +3,17 @@
     import Background from "../components/Sections/Background.svelte";
     import SplitSection from "../components/Sections/SplitSection.svelte";
     import SponsorsSection from "../components/Sections/Sponsors/SponsorsSection.svelte";
-    import EmptySection from "../components/Sections/EmptySection.svelte";
     import Hero from "../components/Sections/Heros/Hero.svelte";
-    import RookieAccomplishments from "../components/Sections/Stats/RookieAccomplishments.svelte";
+    import CurrentAccomplishments from "../components/Sections/Stats/CurrentAccomplishments.svelte";
 </script>
 
 <Background/>
 
 <Hero
         title="SaMoTech"
-        img="images/photos/team/samotech-team1.jpg"
+        img="images/photos/team/samotech-ilt.jpg"
 >
-    <RookieAccomplishments/>
+    <CurrentAccomplishments/>
 </Hero>
 
 <!--<CarouselHero-->
@@ -34,7 +33,7 @@
 
 <SplitSection
         title="About Us"
-        img="images/photos/team/samotech-team2.jpg"
+        img="images/photos/team/samotech-meet1.jpg"
         textSide="left"
 >
     <p>
@@ -67,7 +66,7 @@
 
 <SplitSection
         title="FIRST Tech Challenge"
-        img="images/photos/samotech-winning1.webp"
+        img="images/photos/ftcgame-meet2.webp"
         textSide="right"
 >
     <p>

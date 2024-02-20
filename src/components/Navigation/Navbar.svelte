@@ -48,12 +48,21 @@
                 <!--        <a href="/robot">-->
                 <!--          <button class:active={page === "robot"}>Robot</button>-->
                 <!--        </a>-->
+                <a href="/sponsors">
+                    <button class:active={page === "sponsors"}>
+                        {#if !icons}
+                            Sponsors
+                        {:else}
+                            <Icon icon="mdi:heart" class="nav-icon"/>
+                        {/if}
+                    </button>
+                </a>
                 <a href="/support">
                     <button class:active={page === "support"}>
                         {#if !icons}
                             Support
                         {:else}
-                            <Icon icon="mdi:heart" class="nav-icon"/>
+                            <Icon icon="mdi:add-circle" class="nav-icon"/>
                         {/if}
                     </button>
                 </a>
