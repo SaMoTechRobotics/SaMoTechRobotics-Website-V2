@@ -6,17 +6,22 @@
     <div class="content">
         <h1>Our Sponsors</h1>
         <p>
-            We would like to thank our main sponsors of our 2023-2024 season, ZipRecruiter, Boeing, and Rotary Club
+            We would like to thank our main sponsors of our 2023-2024 season, ZipRecruiter, Boeing, and Rotary Club of
+            Santa Monica
             along with supporting sponsors, Yahoo, Panasonic, and Czeh for their generous support. Your contributions
             made SaMoTech possible and have allowed us to pursue our interests in robotics and engineering. We greatly
             appreciate your belief
             in us and the opportunities you have provided.
         </p>
     </div>
-    <Sponsor to="https://www.ziprecruiter.com/" sponsor="ZipRecruiter"/>
+    <div style="transform: scale(0.75)">
+        <Sponsor to="https://www.ziprecruiter.com/" sponsor="ZipRecruiter"/>
+    </div>
     <div class="sponsors">
         <Sponsor to="" sponsor="Boeing"/>
-        <Sponsor to="" sponsor="RotaryClub-WHITE"/>
+        <div style="transform: scale(0.5)">
+            <Sponsor to="" sponsor="RotaryClub-GEAR"/>
+        </div>
     </div>
     <div class="sponsors">
         <Sponsor to="" sponsor="Yahoo"/>
@@ -58,10 +63,18 @@
     }
 
     .sponsors {
-      display: grid;
-      //grid-template-columns: repeat(2, 1fr);
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1.5fr));
-      //grid-template-rows: repeat(2, 1fr);
+      width: 100%;
+      height: 100%;
+
+      display: inline-grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1.5fr));
+
+      //align content to the center
+      justify-content: center;
+      align-items: center;
+      grid-auto-rows: 1fr;
+
       grid-gap: 2rem;
 
       padding: 0 2rem 2rem;
@@ -69,7 +82,7 @@
 
       @media (max-width: 800px) {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(auto-fit, 1fr);
       }
     }
   }

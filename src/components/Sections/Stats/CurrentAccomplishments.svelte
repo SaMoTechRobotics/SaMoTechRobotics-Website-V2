@@ -16,7 +16,7 @@
             #1 Autonomous Program in California, #11 in the world
         </li>
         <li>
-            3rd Place Inspire Winner, League W
+            3rd Place Inspire Winner, SoCal ILT2
         </li>
     </ul>
 </div>

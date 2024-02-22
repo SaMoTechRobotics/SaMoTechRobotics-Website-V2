@@ -1,12 +1,12 @@
 <script lang="ts">
-  export let to: string;
-  export let sponsor: string;
+    export let to: string;
+    export let sponsor: string;
 </script>
 
 <a href={to} target="_blank">
-  <div class="wrapper">
-    <img src={`images/logos/sponsors/${sponsor}.webp`} alt="" />
-  </div>
+    <div class="wrapper">
+        <img src={`images/logos/sponsors/${sponsor}.webp`} alt=""/>
+    </div>
 </a>
 
 <style lang="scss">
@@ -27,6 +27,7 @@
       &:hover {
         transform: scale(1.05);
       }
+
     }
   }
 </style>
