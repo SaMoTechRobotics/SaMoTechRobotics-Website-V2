@@ -74,6 +74,9 @@
         thing about FTC is the competitions and learning from other teams.
     </Profile>
     <Profile name="Waylon">
-        I am Waylon. I will write my bio soon.
+        Hey, I am Waylon. In robotics I find my passion to be solving problems in an organized, logical manner, as well
+        as building, coding and strategizing. Aside from robotics, I enjoy competitive swimming, programming, and
+        algorithmic trading. My favorite part about our robotics competition is the excitement of competition and team
+        scouting.
     </Profile>
 </TeamProfiles>
